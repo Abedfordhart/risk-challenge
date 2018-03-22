@@ -8,6 +8,7 @@ export default class App extends Component {
   state = {
     foodItems: data,
     search: ''
+    //filteredFoodItems: []
   }
 
   handleInputChange = event => {
@@ -16,9 +17,13 @@ export default class App extends Component {
     this.setState({
       [name]: value
     })
+
   }
 
     render() {
+      let filteredItems = this.state.foodItems.filter((item) => {
+        return item.toLowerCase().includes(this.state.search.toLowerCase());
+      })
       console.log('App Items: ', this.state.foodItems);
       console.log('App Search: ', this.state.search);
 
@@ -29,7 +34,7 @@ export default class App extends Component {
               handleInputChange={this.handleInputChange}
             />
             <ItemList
-              foodItems={this.state.foodItems}
+              foodItems={filteredItems}
             />
             </div>
         )
