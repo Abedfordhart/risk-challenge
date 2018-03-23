@@ -6,4 +6,5 @@
 
 .list-item:hover {
   background-color: #cae9f6;
+  cursor: pointer;
 }

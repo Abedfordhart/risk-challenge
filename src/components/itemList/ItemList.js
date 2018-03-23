@@ -2,6 +2,7 @@ import React from 'react';
 import './itemList.css';
 
 const ItemList = props => (
+  //Render filtered items passed down from app
   <div>
     {props.foodItems.map((item, i) => (
       <div

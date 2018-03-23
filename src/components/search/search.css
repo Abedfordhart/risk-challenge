@@ -10,21 +10,19 @@
   font-weight: 400;
   line-height: 14px;
   display: flex;
-  /*justify-content: center;*/
   align-items: center; 
   
 }
 
-
 .selected {
-  margin: 0px 0px 0px 10px;
-  margin-right: 10px;
+  margin: 0px 5px 0px 5px;
   height: 24px;
   background-color: #40a13b;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #ffffff;
+  overflow: hidden;
 }
 
 input {
