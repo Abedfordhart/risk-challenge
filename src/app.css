@@ -1,3 +1,7 @@
-.hello {
-    font-weight: bold;
+.filter-search {
+  border-style: solid;
+  border-color: #ebebeb;
+  border-width: 8px;
+  width: 243px;
+  height: 290px;
 }
