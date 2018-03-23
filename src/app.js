@@ -26,7 +26,6 @@ export default class App extends Component {
         selectedItems: selectedItems
       })
     }
-
   }
 
   handleClick = event => {
@@ -37,20 +36,15 @@ export default class App extends Component {
     this.setState({
       selectedItems: selectedItems
     })
-
-    console.log("I've been clicked!", event.target.textContent);
-
   }
 
   render() {
     const filteredItems = this.state.foodItems.filter((item) => {
       return item.toLowerCase().includes(this.state.search.toLowerCase());
     })
-    console.log('App Items: ', this.state.foodItems);
-    console.log('App Search: ', this.state.search);
-    console.log('App selectedItems: ', this.state.selectedItems);
+
       return (
-          <div className="filter-search">
+        <div className="filter-search">
           <Search
             value={this.state.search}
             handleInputChange={this.handleInputChange}
@@ -60,7 +54,7 @@ export default class App extends Component {
             foodItems={filteredItems}
             handleClick={this.handleClick}
           />
-          </div>
+        </div>
       )
   }
 }

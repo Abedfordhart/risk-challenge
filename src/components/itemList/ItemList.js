@@ -4,11 +4,13 @@ import './itemList.css';
 const ItemList = props => (
   <div>
     {props.foodItems.map((item, i) => (
-      <p 
-      className="list-item"
-      key={i}
-      onClick={props.handleClick}
-      >{item}</p>
+      <div
+        className="list-item"
+        key={i}
+        onClick={props.handleClick}
+      >
+        {item}
+      </div>
     ))}
   </div>
 );

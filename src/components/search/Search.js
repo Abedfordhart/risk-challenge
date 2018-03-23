@@ -8,8 +8,7 @@ const Search = props => (
       name="search"
       type="text"
       onKeyUp={props.handleInputChange}
-    >
-    </input>
+    />
   </form>
 );
 
